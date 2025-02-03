@@ -19,11 +19,6 @@ class MenuActivity : AppCompatActivity() {
 
         with(binding) {
             searchView.setupWithSearchBar(searchBar)
-            searchBar.inflateMenu(R.menu.option_menu)
-            searchBar.setOnMenuItemClickListener{ menuItem ->
-                // Handle menu
-                true
-            }
             searchView
                 .editText
                 .setOnEditorActionListener{ textView, actionId, event ->
